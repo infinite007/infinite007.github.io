@@ -1,34 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text for readability */
+}
+
 header, footer {
-    background-color: #333;
+    background-color: #1c1c1c; /* Slightly lighter than body for contrast */
     color: white;
     text-align: center;
     padding: 1em 0;
 }
 
 #navbar {
-    background-color: #f4f4f4;
+    background-color: #282828; /* Dark grey */
     padding: 10px;
     text-align: center;
 }
 
 #navbar button {
-    background-color: #fff;
-    color: #333;
-    border: none;
+    background-color: #333333; /* Dark button background */
+    color: #ffffff; /* White text */
+    border: 1px solid #444444; /* Slightly lighter border */
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#navbar button:hover {
+    background-color: #4a4a4a; /* Lighten button on hover */
 }
 
 #content {
     margin: 20px;
     padding: 20px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: #1e1e1e; /* Lighter than body background */
+    border-radius: 8px; /* Optional: rounded corners for content box */
 }
 
