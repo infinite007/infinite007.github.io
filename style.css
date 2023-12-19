@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f3f3f3;
 }
 
 header {
@@ -29,6 +30,7 @@ nav ul li a {
 
 main {
     padding: 20px;
+    text-align: center;
 }
 
 footer {
