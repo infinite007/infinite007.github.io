@@ -1,43 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #121212; /* Dark background */
-    color: white; /* Light text for readability */
+    color: #ddd; /* Soft white text */
 }
 
-header, footer {
-    background-color: #1c1c1c; /* Slightly lighter than body for contrast */
-    color: white;
+header {
+    background-color: #0D47A1; /* Deep blue */
+    color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 #navbar {
-    background-color: #282828; /* Dark grey */
+    background-color: #1E88E5; /* Brighter blue */
     padding: 10px;
     text-align: center;
 }
 
 #navbar button {
-    background-color: #333333; /* Dark button background */
-    color: #ffffff; /* White text */
-    border: 1px solid #444444; /* Slightly lighter border */
+    background-color: #1565C0; /* Slightly darker blue */
+    color: white;
+    border: none;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    border-radius: 4px; /* Rounded corners */
 }
 
 #navbar button:hover {
-    background-color: #4a4a4a; /* Lighten button on hover */
+    background-color: #0D47A1; /* Darken on hover */
 }
 
 #content {
     margin: 20px;
     padding: 20px;
-    background-color: #1e1e1e; /* Lighter than body background */
-    border-radius: 8px; /* Optional: rounded corners for content box */
+    background-color: #1c1c1c; /* Slightly lighter dark background */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* Box shadow for content */
+}
+
+footer {
+    background-color: #0D47A1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
