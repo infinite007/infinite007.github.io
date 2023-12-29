@@ -3,31 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Teja Karumuri</title>
+    <title>Ravi Teja Karumuri's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Ravi Teja Karumuri</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div id="navbar">
-        <button onclick="loadContent('home')">Home</button>
-        <button onclick="loadContent('resume')">Resume</button>
-        <button onclick="loadContent('projects')">Projects</button>
-        <button onclick="loadContent('skills')">Skills</button>
-        <button onclick="loadContent('contact')">Contact</button>
-    </div>
-
-    <div id="content">
-        <!-- Content will be loaded here -->
-    </div>
-
+    <section id="banner">
+        <h1>Welcome to Ravi Teja Karumuri's Portfolio</h1>
+    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Highly skilled Professional with over 5 years of experience in Machine Learning, Deep Learning, and NLP.</p>
+        </section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <!-- Stealth Mode Startup -->
+            <div class="experience">
+                <h3>Technology Lead at Stealth Mode Startup, Hybrid/Tempe AZ</h3>
+                <p>Spearheaded the development of an innovative Ed-Tech application...</p>
+            </div>
+            <!-- Amazon -->
+            <div class="experience">
+                <h3>Software Development Engineer at Amazon, Bellevue WA</h3>
+                <p>Collaborated on high-scale AWS CDK pipeline...</p>
+            </div>
+            <!-- More experiences can be added here -->
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Common Crawl News -->
+            <div class="project">
+                <h3>Common Crawl News</h3>
+                <p>Architected a robust Databricks pipeline integrated with AWS backend...</p>
+            </div>
+            <!-- Yelp Reviewer -->
+            <div class="project">
+                <h3>Yelp Reviewer</h3>
+                <p>Constructed a Review Rating Transformer Encoder model...</p>
+            </div>
+            <!-- More projects can be added here -->
+        </section>
+        <aside id="sidebar">
+            <h2>Contact Information</h2>
+            <p>Email: ravitejak.00725@gmail.com</p>
+            <div class="social-media-links">
+                <a href="https://github.com/infinite007">GitHub</a><br>
+                <a href="https://www.linkedin.com/in/ravi-teja-karumuri/">LinkedIn</a><br>
+            </div>
+        </aside>
+    </main>
     <footer>
-        <p>© 2023 Ravi Teja Karumuri</p>
+        <p>&copy; 2023 Ravi Teja Karumuri</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
