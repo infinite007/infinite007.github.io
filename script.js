@@ -1,25 +1,26 @@
-function loadContent(section) {
-    const contentDiv = document.getElementById('content');
-    switch(section) {
-        case 'home':
-            contentDiv.innerHTML = '<h1>Welcome to My Personal Website</h1>';
-            break;
-        case 'resume':
-            contentDiv.innerHTML = '<h1>Resume</h1><p>[Your resume details]</p>';
-            break;
-        case 'projects':
-            contentDiv.innerHTML = '<h1>Projects</h1><p>[Details of your projects]</p>';
-            break;
-        case 'skills':
-            contentDiv.innerHTML = '<h1>Skills</h1><p>[List of your skills]</p>';
-            break;
-        case 'contact':
-            contentDiv.innerHTML = '<h1>Contact</h1><p>[Your contact information]</p>';
-            break;
-        default:
-            contentDiv.innerHTML = '<h1>Welcome</h1>';
-    }
+// Update the footer year automatically
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
 }
 
-loadContent('home'); // Load home content initially
+// Handle contact form submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
+    // Capture form data
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Replace with your email service logic (EmailJS, Formspree, etc.)
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    alert('Thank you for your message! I will get back to you soon.');
+    contactForm.reset();
+  });
+}

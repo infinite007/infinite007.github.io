@@ -1,70 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Teja Karumuri's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio website for Ravi Teja Karumuri" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Teja Karumuri | Portfolio</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts (Optional) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="banner">
-        <h1>Welcome to Ravi Teja Karumuri's Portfolio</h1>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Ravi Teja Karumuri</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Introduction Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Ravi Teja Karumuri</span>.</h1>
+      <p>
+        Machine Learning Engineer | NLP Enthusiast | AI Researcher
+      </p>
+      <a href="#contact" class="cta-button">Contact Me</a>
+    </div>
+    <div class="hero-image">
+      <!-- Replace with your own profile picture or leave blank -->
+      <img
+        src="IMG_1031.jpg"
+        alt="Ravi Teja Karumuri"
+      />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I'm a Machine Learning Engineer focusing on generative AI, NLP, and data-driven decision-making.
+      With a strong background in Computer Science and hands-on experience in building scalable AI
+      solutions, I love transforming complex problems into innovative, user-centric products.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Master of Science in Computer Science</h3>
+      <h4>Arizona State University, Tempe, AZ</h4>
+      <p><strong>Jan 2020 – May 2022</strong></p>
+      <ul>
+        <li>Thesis: Interpretable Features for Distinguishing Machine-Generated News Articles</li>
+        <li>Relevant Coursework: Natural Language Processing, Data Mining, Social Media Mining</li>
+      </ul>
+    </div>
+    <div class="education-item">
+      <h3>Advanced Certification in AI & Machine Learning</h3>
+      <h4>IIIT Hyderabad, India</h4>
+      <p><strong>Apr 2019 – July 2019</strong></p>
+    </div>
+    <div class="education-item">
+      <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+      <h4>IIT Hyderabad, India</h4>
+      <p><strong>July 2012 – July 2016</strong></p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>Programming</h3>
+        <p>
+          Python, C++, Java, JavaScript, SQL, Node.js, Scala, TypeScript, React.js
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Deep Learning</h3>
+        <p>
+          PyTorch, TensorFlow, PyTorch Lightning, DeepSpeed, FAISS, CUDA
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Data Science & NLP Tools</h3>
+        <p>
+          Scikit-Learn, NumPy, Pandas, PySpark, Spark, NLTK, NetworkX, spaCy,
+          Hugging Face, Databricks
+        </p>
+      </div>
+      <div class="skill">
+        <h3>DevOps & Cloud</h3>
+        <p>
+          AWS CDK, TensorFlow Serving, Docker, Flask, Nginx, LangChain, AutoGen
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Version Control</h3>
+        <p>
+          GitHub, Bitbucket, CodeCommit
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Cloud Platforms</h3>
+        <p>
+          Google Cloud Platform (GCP), Amazon Web Services (AWS)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+      <h3>MCSquaredAI</h3>
+      <h4>Machine Learning Engineer (GenAI) | Tempe, AZ</h4>
+      <p><strong>June 2024 – Present</strong></p>
+      <ul>
+        <li>
+          Led the development of a generative AI visualization tool enhancing data interaction
+          and decision-making.
+        </li>
+        <li>
+          Leveraged large language models for sophisticated analytical capabilities on tabular data.
+        </li>
+        <li>
+          Crafted attribution campaigns for pharmaceutical companies, boosting new prescription
+          (NRx) sales.
+        </li>
+        <li>
+          Utilized unsupervised clustering and predictive models to forecast sales trends and
+          optimize strategies.
+        </li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Stealth Mode Startup</h3>
+      <h4>Technology Lead | Hybrid/Tempe, AZ</h4>
+      <p><strong>Feb 2023 – May 2024</strong></p>
+      <ul>
+        <li>
+          Led development of an innovative Ed-Tech application aimed at transforming learning and
+          exam preparation.
+        </li>
+        <li>
+          Engineered front-end using ReactJS and back-end architecture deployed on AWS EC2.
+        </li>
+        <li>
+          Managed databases with PostgreSQL, MongoDB, and Redis for efficient data handling.
+        </li>
+        <li>
+          Oversaw full application lifecycle, ensuring a customer-centric solution.
+        </li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Amazon</h3>
+      <h4>Software Development Engineer | Bellevue, WA</h4>
+      <p><strong>June 2022 – Jan 2023</strong></p>
+      <ul>
+        <li>
+          Developed a high-scale AWS CDK pipeline processing millions of customer-ad interaction
+          records.
+        </li>
+        <li>
+          Integrated AWS services to build a scalable data processing pipeline with advanced
+          security measures for data anonymity.
+        </li>
+        <li>
+          Built infrastructure handling 1,000 TPS for processing interaction records.
+        </li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Sonetel</h3>
+      <h4>Data Scientist | Hyderabad, India</h4>
+      <p><strong>May 2019 – Dec 2019</strong></p>
+      <ul>
+        <li>
+          Developed a Quick Response feature for a customer service chatbot, enhancing
+          answer recommendations for representatives.
+        </li>
+        <li>
+          Improved intent recognition by implementing clustering techniques and embedding models,
+          increasing answer acceptance rates from 15% to 28%.
+        </li>
+        <li>
+          Enabled advanced retrieval of relevant conversations using BERT embeddings and
+          approximate nearest neighbor search.
+        </li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Glib.ai</h3>
+      <h4>NLP Engineer | Ahmedabad, India</h4>
+      <p><strong>Dec 2016 – Dec 2018</strong></p>
+      <ul>
+        <li>
+          Contributed to an online platform enabling MSMEs to build customized automated chatbots,
+          significantly enhancing user engagement.
+        </li>
+        <li>
+          Expanded the intent recognition module to support languages like Hindi and Arabic using
+          sub-word embeddings, leading to 30% revenue growth.
+        </li>
+        <li>
+          Developed an attention-based automated Q/A system for FinTech services, leveraging
+          advanced neural network architectures.
+        </li>
+        <li>
+          Led the development of a semantic search engine for car catalog data, achieving a
+          Precision@20 score of 79%.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Research Experience Section -->
+  <section id="research" class="research-section">
+    <h2>Research Experience</h2>
+    <div class="research-item">
+      <h3>Master’s Thesis, Arizona State University</h3>
+      <h4>Researcher</h4>
+      <p><strong>Jan 2021 – May 2022</strong></p>
+      <ul>
+        <li>
+          Built a custom news dataset with articles on military ground vehicles, COVID-19, and
+          climate change.
+        </li>
+        <li>
+          Fine-tuned GPT-2 and GROVER models to generate neural fake news counterparts.
+        </li>
+        <li>
+          Developed data processing pipelines to analyze dependency parse trees using SuPar,
+          Pandas, NumPy, and NLTK.
+        </li>
+        <li>
+          Trained classification models, achieving up to 82% accuracy in distinguishing
+          human-written from machine-generated articles.
+        </li>
+      </ul>
+    </div>
+    <div class="research-item">
+      <h3>University City Exchange, Tempe, AZ</h3>
+      <h4>Machine Learning Engineer</h4>
+      <p><strong>Sept 2021 – May 2022</strong></p>
+      <ul>
+        <li>
+          Developed a dashboard to analyze sentiment and EMFD scores related to water, energy,
+          and infrastructure in I-10 states.
+        </li>
+        <li>
+          Migrated news crawler scripts from Perl to Python and created data pipelines using
+          Google News API and Twitter API.
+        </li>
+        <li>
+          Implemented sentiment analysis and topic modeling services using VADER, FlairNLP, BERT
+          Topic, and Top2Vec.
+        </li>
+        <li>
+          Conducted statistical analyses to identify significant sentiment differences in
+          news articles.
+        </li>
+        <li>
+          Explored latent communities in Twitter hashtags using community detection algorithms.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards" class="awards-section">
+    <h2>Awards & Honors</h2>
+    <ul>
+      <li>
+        Graduated with a perfect GPA of 4.00/4.00
+      </li>
+      <li>
+        Top 1% of Class, Advanced Certification in AI and Machine Learning, IIIT Hyderabad
+      </li>
+      <li>
+        Reviewer, IEEE Conference on Cognitive Machine Intelligence (CogMI), March 2021
+      </li>
+      <li>
+        Volunteer, WSDM Conference 2022, February 2022
+      </li>
+    </ul>
+    <h3>Certifications</h3>
+    <ul>
+      <li>
+        Advanced Certification in Artificial Intelligence and Machine Learning, IIIT Hyderabad
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>
+      If you'd like to discuss opportunities, collaboration, or just say hello, feel free to reach out:
+      <br />
+      <strong>Email:</strong>
+      <a href="mailto:ravitejak.00725@gmail.com">ravitejak.00725@gmail.com</a>
+    </p>
+    
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name*</label>
+        <input id="name" type="text" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="message">Message*</label>
+        <textarea
+          id="message"
+          placeholder="Type your message"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section> -->
+
+  <!-- <section id="contact" class="contact-section"> -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>
+        If you'd like to discuss opportunities, collaboration, or just say hello, feel free to email me at:
+        <br />
+        <strong>Email:</strong>
+        <a href="mailto:ravitejak.00725@gmail.com">ravitejak.00725@gmail.com</a>
+      </p>
     </section>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Highly skilled Professional with over 5 years of experience in Machine Learning, Deep Learning, and NLP.</p>
-        </section>
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <!-- Stealth Mode Startup -->
-            <div class="experience">
-                <h3>Technology Lead at Stealth Mode Startup, Hybrid/Tempe AZ</h3>
-                <p>Spearheaded the development of an innovative Ed-Tech application...</p>
-            </div>
-            <!-- Amazon -->
-            <div class="experience">
-                <h3>Software Development Engineer at Amazon, Bellevue WA</h3>
-                <p>Collaborated on high-scale AWS CDK pipeline...</p>
-            </div>
-            <!-- More experiences can be added here -->
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Common Crawl News -->
-            <div class="project">
-                <h3>Common Crawl News</h3>
-                <p>Architected a robust Databricks pipeline integrated with AWS backend...</p>
-            </div>
-            <!-- Yelp Reviewer -->
-            <div class="project">
-                <h3>Yelp Reviewer</h3>
-                <p>Constructed a Review Rating Transformer Encoder model...</p>
-            </div>
-            <!-- More projects can be added here -->
-        </section>
-        <aside id="sidebar">
-            <h2>Contact Information</h2>
-            <p>Email: ravitejak.00725@gmail.com</p>
-            <div class="social-media-links">
-                <a href="https://github.com/infinite007">GitHub</a><br>
-                <a href="https://www.linkedin.com/in/ravi-teja-karumuri/">LinkedIn</a><br>
-            </div>
-        </aside>
-    </main>
-    <footer>
-        <p>&copy; 2023 Ravi Teja Karumuri</p>
-    </footer>
+    
+  
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Ravi Teja Karumuri. All rights reserved.</p>
+    <div class="social-links">
+      <!-- Replace with your actual social links -->
+      <a href="https://bit.ly/3Yob0dc" target="_blank">Scholar Profile</a>
+      <a href="https://github.com/infinite007" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ravi-teja-karumuri" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
